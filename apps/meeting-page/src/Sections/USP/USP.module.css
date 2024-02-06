@@ -1,0 +1,39 @@
+/*
+      <div className="step-indicator">
+        <div className="line"></div>
+        <div className="circle">
+*/
+.usp {
+  background-color: yellow;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-indicator {
+
+  width: fit-content;
+  margin: 0 auto;
+
+  display: grid;
+  place-items: center;
+
+  .line {
+    padding: 1px;
+    width: 5px;
+    height: 40px;
+    background-color: black;
+  }
+
+  .circle {
+    border: 2px solid black;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    /* anchor-name: --circle; */
+  }
+}

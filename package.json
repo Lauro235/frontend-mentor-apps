@@ -1,0 +1,10 @@
+{
+  "name": "frontend-mentor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev--meeting-page": "pnpm --filter meeting-page dev",
+    "build--meeting-page": "pnpm --filter meeting-page build"
+  }
+}

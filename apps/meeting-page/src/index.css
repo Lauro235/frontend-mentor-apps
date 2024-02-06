@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+  /* variables */
+  /* color names from https://colors.artyclick.com/color-name-finder/ */
+  --color_hippie-blue: #4d96a9;
+  --color_deep-lavander: #855fb1;
+  --color_ebony-clay: #28283d;
+  --color_oslo-grey: #87879d;
+  --color_columbia-blue: #8fe3f9;
+  --color_light-violet: #d9b8ff;
+  --color_alabaster: #fafafa;
+  
+  --font: "Red Hat Display", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+
+  --size_heading1-mobile: 4.4rem;
+  --size_heading1-tablet: 4.8rem;
+  --size_heading1-desktop: 6.4rem;
+  --size_heading2-sm: 3.2rem;
+  --size_heading2-lrg: 4rem;
+  --size_body-sm: 1.6rem;
+  --size_body-lrg: 1.8rem;
+
+  /* spacers */
+
+  --spacer_gap: 16px;
+  
+  font-family: var(--font);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  /* stop mobile browsers from manipulating font size */
+  -webkit-text-size-adjust: none; /* for iOS Safari */
+  text-size-adjust: none; /* for other mobile browsers */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+  list-style: none;
+  padding-left: 0;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+a {
+  text-underline-position: under;
+  text-decoration-thickness: 8;
+}
+
+label,
+button,
+select,
+summary,
+[type="radio"],
+[type="submit"],
+[type="checkbox"] {
+  cursor: pointer;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

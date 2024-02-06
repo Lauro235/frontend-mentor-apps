@@ -1,0 +1,14 @@
+.pc-hero {
+  display: none;
+}
+/* @media (min-width: 768px) {
+} */
+@media (min-width: 1440px) {
+  .pc-hero {
+    display: flex;
+  }
+  .pc-hero-img {
+    width: 200px;
+    flex: 0 0 auto;
+  }
+}
