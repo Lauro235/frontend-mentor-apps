@@ -3,11 +3,12 @@ import logo from "src/assets/logo.svg";
 import HeroMob from "./HeroMob/HeroMob";
 import HeroPC from "./HeroPC/HeroPC";
 import HeroContent from "./HeroContent/HeroContent";
+import styles from "./Hero.module.css"
 
 const Hero = () => {
   return (
-    <div>
-      <img src={logo} alt="Company Logo" />
+    <header>
+      <img className={styles["header-logo"]} src={logo} alt="Company Logo" />
 
       {/*
         use the syntax className={`${styles["img-hero"]}`} to add multiple js or ordinary classes
@@ -18,7 +19,7 @@ const Hero = () => {
       <HeroPC>
         <HeroContent />
       </HeroPC>
-    </div>
+    </header>
   );
 };
 
