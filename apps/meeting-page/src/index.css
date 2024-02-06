@@ -1,4 +1,5 @@
-* {
+*,
+body {
   margin: 0;
 }
 
@@ -8,21 +9,18 @@
   box-sizing: border-box;
 }
 
-body {
-  line-height: 1.5;
-}
-
 :root {
   /* variables */
   /* color names from https://colors.artyclick.com/color-name-finder/ */
   --color_hippie-blue: #4d96a9;
+  --color_hippie-blue-active: #71C0D4;
   --color_deep-lavander: #855fb1;
   --color_ebony-clay: #28283d;
   --color_oslo-grey: #87879d;
   --color_columbia-blue: #8fe3f9;
   --color_light-violet: #d9b8ff;
   --color_alabaster: #fafafa;
-  
+
   --font: "Red Hat Display", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
 
@@ -37,7 +35,7 @@ body {
   /* spacers */
 
   --spacer_gap: 16px;
-  
+
   font-family: var(--font);
   line-height: 1.5;
   font-weight: 400;

@@ -9,11 +9,20 @@
       /* position: relative; */
       /* display: block; */
       height: 100%;
+      /* width: 100%; */
       max-width: 110%;
       transform: translateX(-5%);
     }
-    
-}
+  }
+  
+  @media (min-width: 740px) {
+    .mob-hero {
+      img {
+      margin: 0 auto;
+      transform: translateX(0);
+    }
+  }
+  }
 @media (min-width: 1440px) {
   .mob-hero {
     display: none;
