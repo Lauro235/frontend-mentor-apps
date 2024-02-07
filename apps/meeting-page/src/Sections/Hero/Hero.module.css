@@ -1,8 +1,71 @@
+.btn-container {
+  display: grid;
+  gap: 1.5rem;
+  margin: 0 auto;
+  width: fit-content;
+}
+
 .heading-span {
   display: block;
+  font-size: 2.5rem;
 }
 
 .header-logo {
   margin: 0 auto;
   width: auto;
+}
+
+.mob-hero {
+  display: grid;
+  overflow: hidden;
+  /*
+    Ensure image overflows equally to the left and right of the screen width.
+    overflow: hidden (line 3/the parent) ensures that both the left and the right are cut off from the child.
+  */
+  img {
+    height: 100%;
+    max-width: 110%;
+    transform: translateX(-5%);
+  }
+}
+
+.pc-hero {
+  display: none;
+}
+
+.tagline {
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 340px;
+}
+
+@media (min-width: 740px) {
+  .header-span {
+    font-size: 3rem;
+  }
+  .mob-hero {
+      img {
+      margin: 0 auto;
+      transform: translateX(0);
+    }
+    .tagline {
+      width: 450px;
+    }
+  }
+  }
+@media (min-width: 1440px) {
+  .mob-hero {
+    display: none;
+  }
+  .pc-hero {
+    display: flex;
+  }
+  .pc-hero-img {
+    /* width: 200px; */
+    flex: 0 0 auto;
+  }
+  .tagline {
+    font-size: 1.125rem;
+    width: 470px;
+  }
 }

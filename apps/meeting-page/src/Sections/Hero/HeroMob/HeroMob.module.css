@@ -1,5 +1,5 @@
 .mob-hero {
-    display: block;
+    display: grid;
     overflow: hidden;
     /*
       Ensure image overflows equally to the left and right of the screen width.

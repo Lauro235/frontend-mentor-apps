@@ -1,5 +1,6 @@
 import heroFull from "src/assets/mob_tab-hero.png";
-import styles from "./HeroMob.module.css";
+import styles from "../Hero.module.css";
+// import styles from "./HeroMob.module.css";
 import { PropsWithChildren } from "react";
 
 const HeroMob = ({ children }: PropsWithChildren) => {

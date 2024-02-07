@@ -1,4 +1,5 @@
 import { PropsWithChildren, useState } from "react"
+import styles from "./Button.module.css"
 
 interface IButton {
   default_color: string;
@@ -18,6 +19,7 @@ const Button = ({children, default_color, active_color}: PropsWithChildren & IBu
 
   return (
     <button
+      className={styles.btn}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={{

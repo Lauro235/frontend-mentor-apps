@@ -15,6 +15,7 @@ body {
   --color_hippie-blue: #4d96a9;
   --color_hippie-blue-active: #71C0D4;
   --color_deep-lavander: #855fb1;
+  --color_deep-lavander-active: #B08BDD;
   --color_ebony-clay: #28283d;
   --color_oslo-grey: #87879d;
   --color_columbia-blue: #8fe3f9;
@@ -108,6 +109,15 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+/* Global Classes */
+
+.gap {
+  display: grid;
+  gap: 2.5rem;
+}
+
+/* Media queries */
 
 @media (prefers-color-scheme: light) {
   :root {

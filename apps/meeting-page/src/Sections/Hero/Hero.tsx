@@ -7,7 +7,7 @@ import styles from "./Hero.module.css"
 
 const Hero = () => {
   return (
-    <header>
+    <header className={`${styles["header-container"]} gap`}>
       <img className={styles["header-logo"]} src={logo} alt="Company Logo" />
 
       {/*

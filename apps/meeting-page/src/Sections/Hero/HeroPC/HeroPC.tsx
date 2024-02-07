@@ -1,6 +1,6 @@
 import heroRight from "src/assets/image-hero-right.png";
 import heroLeft from "src/assets/image-hero-left.png";
-import styles from "./HeroPC.module.css";
+import styles from "../Hero.module.css";
 import { PropsWithChildren } from "react";
 
 const HeroPC = ({ children }: PropsWithChildren) => {
