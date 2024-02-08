@@ -19,16 +19,25 @@
 }
 
 .step-indicator {
+  --line-color: 216, 216, 216;
+  --num-color: 135, 135, 157;
+  
   width: fit-content;
   margin: 0 auto;
+  color: rgb(var(--line-color));
 
   display: grid;
   place-items: center;
 
+  p {
+    font-weight: 900;
+    color: rgb(var(--num-color));
+  }
+
   .circle {
     --rad: 3rem;
     
-    border: 2px solid black;
+    border: 0.065rem solid rgb(var(--line-color));
     width: var(--rad);
     height: var(--rad);
     display: flex;
@@ -38,11 +47,11 @@
   }
 
   .line {
-    padding: .065rem;
+    padding: .0325rem;
     border-radius: 1px;
-    width: 1px;
+    width: 0.0325rem;
     height: 80px;
-    background-color: #00000055;
+    background-color: rgb(var(--line-color));
   }
 
 }
