@@ -2,6 +2,7 @@ import classes from "./App.module.css";
 import Hero from "./Sections/Hero/Hero";
 
 import USP from "./Sections/USP/USP";
+import USPImages from "./Sections/USP/USPImages";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Hero />
 
       <USP step={1}>
-        <div>PICTURES</div>
+        <USPImages />
         <p>Built for modern use</p>
         <h2>Smarter meetings, all in one place</h2>
 

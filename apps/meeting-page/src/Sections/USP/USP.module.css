@@ -1,39 +1,49 @@
-/*
-      <div className="step-indicator">
-        <div className="line"></div>
-        <div className="circle">
-*/
+
 .usp {
-  background-color: yellow;
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
-.step-indicator {
+.usp-images {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 
+  img {
+    width: 45%;
+    border-radius: 16px;
+  }
+}
+
+.step-indicator {
   width: fit-content;
   margin: 0 auto;
 
   display: grid;
   place-items: center;
 
-  .line {
-    padding: 1px;
-    width: 5px;
-    height: 40px;
-    background-color: black;
-  }
-
   .circle {
+    --rad: 3rem;
+    
     border: 2px solid black;
-    width: 6rem;
-    height: 6rem;
+    width: var(--rad);
+    height: var(--rad);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-
-    /* anchor-name: --circle; */
   }
+
+  .line {
+    padding: .065rem;
+    border-radius: 1px;
+    width: 1px;
+    height: 80px;
+    background-color: #00000055;
+  }
+
 }
+

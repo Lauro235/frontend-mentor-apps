@@ -12,7 +12,7 @@ const Usp = ({step, children}: PropsWithChildren & IUSP) => {
       <div className={styles["step-indicator"]}>
         <div className={styles.line}></div>
         <div className={styles.circle}>
-          <p>{step}</p>
+          <p>{step.toString().padStart(2,'0')}</p>
         </div>
       </div>
       {children}
