@@ -19,7 +19,7 @@ const HeroContent = () => {
           default_color="var(--color_hippie-blue)"
           active_color="var(--color_hippie-blue-active)"
         >
-          <span>Download</span> <span>v1.3</span>
+          <span>Download</span> <span className={styles['bleu']}>v1.3</span>
         </Button>
         <Button
           default_color="var(--color_deep-lavander)"

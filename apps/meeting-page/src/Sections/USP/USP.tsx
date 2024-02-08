@@ -1,12 +1,12 @@
 import { PropsWithChildren } from "react";
-import styles from "./USP.module.css"
-
+import styles from "./USP.module.css";
 
 interface IUSP {
   step: number;
+  imgSource?: string;
 }
 
-const Usp = ({step, children}: PropsWithChildren & IUSP) => {
+const Usp = ({ step, imgSource, children }: PropsWithChildren & IUSP) => {
   return (
     <div className={`${styles.usp}`}>
       <div className={styles["step-indicator"]}>
@@ -15,7 +15,14 @@ const Usp = ({step, children}: PropsWithChildren & IUSP) => {
           <p>{step.toString().padStart(2, "0")}</p>
         </div>
       </div>
-      {children}
+      <div
+        style={{
+          backgroundImage: `url(${imgSource})`,
+        }}
+        className={styles["usp-content"]}
+      >
+        {children}
+      </div>
     </div>
   );
 };

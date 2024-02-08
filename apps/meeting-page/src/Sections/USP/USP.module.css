@@ -1,6 +1,14 @@
+.usp-content {
+  padding-top: calc(var(--spacer_gap) * 3);
+  position: relative;
+  bottom: 45px;
+  z-index: -1;
+  /* background-color: yellow; */
+}
 
 .usp {
   display: grid;
+  position: relative;
   justify-content: center;
   align-items: center;
   gap: var(--spacer_gap);
@@ -46,6 +54,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: white;
   }
 
   .line {

@@ -12,15 +12,17 @@ body {
 :root {
   /* variables */
   /* color names from https://colors.artyclick.com/color-name-finder/ */
-  --color_hippie-blue: #4d96a9;
-  --color_hippie-blue-active: #71C0D4;
-  --color_deep-lavander: #855fb1;
-  --color_deep-lavander-active: #B08BDD;
-  --color_ebony-clay: #28283d;
-  --color_oslo-grey: #87879d;
-  --color_columbia-blue: #8fe3f9;
-  --color_light-violet: #d9b8ff;
-  --color_alabaster: #fafafa;
+  --color_hippie-blue: rgb(77, 150, 169);
+  --color_hippie-blue-active: rgb(113, 192, 212);
+  --color_deep-lavander: rgb(133, 95, 177);
+  --color_deep-lavander-active: rgb(176, 139, 221);
+  --color_ebony-clay: rgb(40, 40, 61);
+  --color_oslo-grey: rgb(135, 135, 157);
+  --color_columbia-blue: rgb(143, 227, 249);
+  --color_light-violet: rgb(217, 184, 255);
+  --color_alabaster: rgb(250, 250, 250);
+
+  /*  */
 
   --font: "Red Hat Display", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
@@ -115,6 +117,14 @@ button:focus-visible {
 .gap {
   display: grid;
   gap: 2.5rem;
+}
+
+.hippie-blue {
+  color: var(--color_hippie-blue);
+}
+
+.oslo-grey {
+  color: var(--color_oslo-grey);
 }
 
 /* Media queries */

@@ -1,3 +1,7 @@
+.bleu {
+  color: var(--color_columbia-blue);
+}
+
 .btn-container {
   display: grid;
   gap: var(--spacer_gap);
