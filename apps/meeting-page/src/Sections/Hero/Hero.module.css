@@ -1,6 +1,6 @@
 .btn-container {
   display: grid;
-  gap: 1.5rem;
+  gap: var(--spacer_gap);
   margin: 0 auto;
   width: fit-content;
 }
@@ -44,7 +44,7 @@
     font-size: 3rem;
   }
   .mob-hero {
-      img {
+    img {
       margin: 0 auto;
       transform: translateX(0);
     }
@@ -52,7 +52,7 @@
       width: 450px;
     }
   }
-  }
+}
 @media (min-width: 1440px) {
   .mob-hero {
     display: none;
@@ -61,8 +61,8 @@
     display: flex;
   }
   .pc-hero-img {
-    /* width: 200px; */
-    flex: 0 0 auto;
+    height: fit-content;
+    margin: 0 auto;
   }
   .tagline {
     font-size: 1.125rem;

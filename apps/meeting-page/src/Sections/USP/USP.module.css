@@ -3,6 +3,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  gap: var(--spacer_gap);
+  padding-bottom: var(--spacer_gap);
 }
 
 .usp-images {
