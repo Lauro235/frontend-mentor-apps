@@ -117,6 +117,10 @@ button:focus-visible {
   gap: 2.5rem;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .hippie-blue {
   color: rgb(var(--color_hippie-blue));
 }

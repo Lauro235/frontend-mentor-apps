@@ -23,22 +23,13 @@ const Usp = ({
         </div>
       </div>
       <div className={styles["usp-content"]}>
-        {/* simply render div with children */}
-        {/* If imgSource -> include div with style with ${imgSource} */}
-        {/* If imgOverlay -> include div with style and another Overlay component*/}
-        {!imgSource && !imgOverlay && <div>{children}</div>}
-        {imgSource && (
-          <>
-            <div className={styles["copy"]}>{children}</div>
-            <div
-              className={`${styles["background-image"]} ${styles["absolute"]}`}
-              style={{
-                backgroundImage: `url(${imgSource})`,
-              }}
-            >
-              {imgOverlay && <Overlay imgOverlay={imgOverlay} />}
-            </div>
-          </>
+        {/* Can you use short circuiting to simplify this further? */}
+        {imgSource || imgOverlay ? (
+          <Overlay imgSource={imgSource} imgOverlay={imgOverlay}>
+            {children}
+          </Overlay>
+        ) : (
+          <>{children}</>
         )}
       </div>
     </div>
