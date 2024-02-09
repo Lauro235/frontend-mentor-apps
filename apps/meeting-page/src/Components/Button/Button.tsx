@@ -23,7 +23,7 @@ const Button = ({children, default_color, active_color}: PropsWithChildren & IBu
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={{
-        backgroundColor: isHovering ? active_color : default_color,
+        backgroundColor: isHovering ? `rgb(${active_color})` : `rgb(${default_color})`,
       }}
     >
       {children}

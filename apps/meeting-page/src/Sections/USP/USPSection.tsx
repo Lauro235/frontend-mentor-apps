@@ -1,6 +1,6 @@
 import USP from "./USP";
 import USPImages from "./USPImages";
-import imgSource from "../../assets/mob-footer.jpg"
+import imgSource from "../../assets/mob-footer.jpg";
 
 const USPSection = () => {
   return (
@@ -17,7 +17,7 @@ const USPSection = () => {
         </p>
       </USP>
 
-      <USP step={2} imgSource={imgSource}>
+      <USP step={2} imgSource={imgSource} imgOverlay="var(--color_hippie-blue)">
         <h2>Experience more together</h2>
         <p>
           Stay connected with reliable HD meetings and unlimited one-on-one and
@@ -28,6 +28,6 @@ const USPSection = () => {
       </USP>
     </div>
   );
-}
+};
 
-export default USPSection
+export default USPSection;

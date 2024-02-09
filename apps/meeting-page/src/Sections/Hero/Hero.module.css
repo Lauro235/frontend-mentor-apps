@@ -1,5 +1,5 @@
 .bleu {
-  color: var(--color_columbia-blue);
+  color: rgb(var(--color_columbia-blue));
 }
 
 .btn-container {
